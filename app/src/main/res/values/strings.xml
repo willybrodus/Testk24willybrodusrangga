@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Testk24willybrodusrangga</string>
+    <!-- Strings related to font -->
+    <string name="roboto_bold_condensed">Roboto-BoldCondensed</string>
+    <string name="roboto_bold_condensed_italic">Roboto-BoldCondensedItalic</string>
+    <string name="roboto_condensed">Roboto-Condensed</string>
+    <string name="roboto_condensed_italic">Roboto-CondensedItalic</string>
+</resources>
