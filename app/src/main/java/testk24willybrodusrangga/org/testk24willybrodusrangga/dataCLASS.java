@@ -9,7 +9,7 @@ public class dataCLASS {
         private String ID;
         private String nama;
         private String asal;
-        private String join;
+        private String gabung;
 
         public String getNo() {
             return no;
@@ -44,10 +44,10 @@ public class dataCLASS {
         }
 
         public String getJoin() {
-            return join;
+            return gabung;
         }
 
         public void setJoin(String join){
-            this.join = join;
+            this.gabung = join;
         }
 }

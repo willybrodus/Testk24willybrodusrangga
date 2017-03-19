@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             try {
-                url = new URL("http://test.k24.co.id/api.php");
+                url = new URL(config.SERVER_PHP + "data/lihatandroid");
                 HttpURLConnection urlConnection = null;
                 try {
                     urlConnection = (HttpURLConnection) url.openConnection();
@@ -286,8 +286,8 @@ public class MainActivity extends AppCompatActivity {
 
 
                     Uri.Builder builder = new Uri.Builder()
-                            .appendQueryParameter("id", "rc2017")
-                            .appendQueryParameter("name", "willybrodus");
+                            .appendQueryParameter("search", "");
+//                            .appendQueryParameter("name", "willybrodus");
 
                     String query = builder.build().getEncodedQuery();
 

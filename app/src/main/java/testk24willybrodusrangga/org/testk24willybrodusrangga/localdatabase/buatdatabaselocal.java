@@ -10,7 +10,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class buatdatabaselocal extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "testk24.db";
+    //deklarasi nama sqlite
+    private static final String DATABASE_NAME = "kapada.db";
+    //membuar querry pembuatan table
     private static final String tablesetting = "CREATE TABLE  " +
             "data(" +
             "no text DEFAULT null," +
@@ -21,6 +23,7 @@ public class buatdatabaselocal extends SQLiteOpenHelper {
 
     private Context contex;
 
+    //membuat database konstruktor
     public buatdatabaselocal(Context contex) {
         super(contex, DATABASE_NAME, null, DATABASE_VERSION);
         this.contex = contex;
@@ -29,6 +32,7 @@ public class buatdatabaselocal extends SQLiteOpenHelper {
     }
 
 
+    //terun otomatis karena turunan dari kelas sqlite
     @Override
     public void onCreate(SQLiteDatabase db) {
         // db.execSQL("DROP TABLE IF EXISTS settingphone" );
